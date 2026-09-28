@@ -1,0 +1,23 @@
+# Secrets
+.vault_pass*
+.env
+*.pem
+*.key
+
+# Ansible / tooling
+*.log
+.ansible/
+fact_cache/
+collections/ansible_collections/
+*-artifact-*.json
+
+# Network config backups (default folder for backup: true)
+backup/
+output/
+
+# Python (custom filter plugins)
+__pycache__/
+
+# OS / editor
+.DS_Store
+.vscode/
