@@ -1,0 +1,5 @@
+# Exeter customer edge router 1: circuit A to ISP2
+loopback: 10.0.7.1
+interfaces:
+  - { name: Ethernet1, description: Exeter CE RT2 P2P, ip: 10.100.0.0/31 }
+  - { name: Ethernet2, description: Exeter office LAN A, ip: 172.16.0.1/24 }

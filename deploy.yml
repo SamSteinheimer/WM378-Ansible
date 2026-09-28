@@ -1,0 +1,7 @@
+# Push the generated configs to the routers
+- hosts: all
+  gather_facts: false
+  tasks:
+    - name: Push config
+      arista.eos.eos_config:
+        src: "configs/{{ inventory_hostname }}.cfg"

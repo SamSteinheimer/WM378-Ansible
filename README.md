@@ -1,1 +1,1 @@
-Initial Repo creation for Ansible automation for WM378
+An EVE-NG lab of a UK wide multi-operator network, used to demonstrate the design in my network design report. This repo is a purely theoretical implementation for educational purposes.
