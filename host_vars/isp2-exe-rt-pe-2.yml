@@ -3,3 +3,9 @@ loopback: 10.0.8.2
 interfaces:
   - { name: Ethernet1, description: Exeter PE RT1 P2P, ip: 10.30.0.1/31 }
   - { name: Ethernet3, description: Exeter CE Peering, ip: 10.100.0.5/31 }
+
+bgp:
+  peer_groups:
+    - remote_as: 65000
+      neighbors:
+        - 10.100.0.4

@@ -1,0 +1,12 @@
+router bgp {{ group_bgp.local_as }}
+   router-id {{ loopback }}
+   timers bgp {{ bgp_timers.keepalive }} {{ bgp_timers.hold }}
+
+{% for network in group_bgp.networks %}
+   network {{ network }}
+{% endfor %}
+{% for peer_group in bgp.peer_groups %}
+{% for neighbor in peer_group.neighbors %}
+   neighbor {{ neighbor }} remote-as {{ peer_group.remote_as }}
+{% endfor %}
+{% endfor %}

@@ -1,4 +1,2 @@
 # BGP defaults
 bgp_timers: { keepalive: 10, hold: 30 }
-bgp_maximum_routes: 12000
-bgp_send_community: true

@@ -11,5 +11,6 @@ ntp server {{ s }}
 {% endfor %}
 !
 interface Management1
-   ip address {{ ansible_host }}/{{ mgmt_prefix_length }}
+   ip address {{ ansible_host }}/{{ mgmt_prefix_length }} 
+   {# Will be used later when bootstrapping #}
 !

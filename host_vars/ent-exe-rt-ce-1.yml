@@ -4,3 +4,9 @@ interfaces:
   - { name: Ethernet1, description: Exeter CE RT2 P2P, ip: 10.100.0.0/31 }
   - { name: Ethernet2, description: Exeter office LAN A, ip: 172.16.0.1/24 }
   - { name: Ethernet3, description: ISP2 PE Peering, ip: 10.100.0.2/31 }
+
+bgp:
+  peer_groups:
+    - remote_as: 65100
+      neighbors:
+        - 10.100.0.3

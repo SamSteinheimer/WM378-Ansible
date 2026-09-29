@@ -1,1 +1,4 @@
-asn: 65001
+group_bgp:
+  local_as: 65000
+  networks:
+    - 172.16.0.0/24
