@@ -2,4 +2,4 @@
 loopback: 10.0.8.1
 interfaces:
   - { name: Ethernet1, description: Exeter PE RT2 P2P, ip: 10.30.0.0/31 }
-  - { name: Ethernet3, description: Exeter CE Peering, ip: 172.16.0.3/31 }
+  - { name: Ethernet3, description: Exeter CE Peering, ip: 10.100.0.3/31 }
