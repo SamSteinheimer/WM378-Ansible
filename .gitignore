@@ -10,6 +10,7 @@
 fact_cache/
 collections/ansible_collections/
 *-artifact-*.json
+configs/
 
 # Network config backups (default folder for backup: true)
 backup/
